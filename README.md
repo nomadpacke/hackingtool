@@ -16,7 +16,7 @@
 <br>
 
 ```
- 17 categories  ·  150+ tools  ·  Linux & macOS  ·  Rich terminal UI
+ 20 categories  ·  185+ tools  ·  Linux & macOS  ·  Rich terminal UI
 ```
 
 </div>
@@ -37,6 +37,29 @@
 | **Menus** | Iterative navigation — no more recursion stack overflow |
 | **Docker** | Builds locally — no unverified external images |
 | **Deps** | `requirements.txt` cleaned — removed unused flask/boxes/lolcat/requests |
+| **Search** | Type `/` or `s` to search 185+ tools by name, description, or keyword |
+| **Tags** | Type `t` to filter by tag — osint, web, c2, cloud, mobile, wireless, and 13 more |
+| **Recommend** | Type `r` — "I want to scan a network" → shows relevant tools |
+| **Install status** | Each tool shows ✔ (installed) or ✘ (not installed) in the menu |
+| **Install all** | Option `97` in any category — install all tools at once |
+| **Update** | Each tool has an Update option — smart detection (git pull / pip upgrade / go install) |
+| **One-liner install** | `curl -sSL .../install.sh \| sudo bash` — no manual clone needed |
+| **3 new categories** | Active Directory, Cloud Security, Mobile Security |
+| **35 new tools** | BloodHound, Sliver, Impacket, Frida, Prowler, Subfinder, Gobuster, and 28 more |
+
+---
+
+## Quick Commands
+
+| Command | What it does |
+|---|---|
+| `/` or `s` | Search all 185+ tools by name, description, or keyword |
+| `t` | Filter tools by tag (osint, scanner, c2, cloud, etc.) |
+| `r` | Recommend tools for a task ("scan a network", "crack passwords", ...) |
+| `?` | Quick help reference — works in every menu |
+| `q` | Quit from any menu level |
+| `97` | Install all tools in current category |
+| `99` | Go back to previous menu |
 
 ---
 
@@ -45,22 +68,25 @@
 | # | Category | Tools |
 |---|---|:---:|
 | 1 | [Anonymously Hiding](#anonymously-hiding-tools) | 2 |
-| 2 | [Information Gathering](#information-gathering-tools) | 22 |
+| 2 | [Information Gathering](#information-gathering-tools) | 26 |
 | 3 | [Wordlist Generator](#wordlist-generator) | 7 |
-| 4 | [Wireless Attack](#wireless-attack-tools) | 12 |
+| 4 | [Wireless Attack](#wireless-attack-tools) | 13 |
 | 5 | [SQL Injection](#sql-injection-tools) | 7 |
 | 6 | [Phishing Attack](#phishing-attack-tools) | 17 |
-| 7 | [Web Attack](#web-attack-tools) | 13 |
-| 8 | [Post Exploitation](#post-exploitation-tools) | 3 |
-| 9 | [Forensics](#forensic-tools) | 7 |
+| 7 | [Web Attack](#web-attack-tools) | 20 |
+| 8 | [Post Exploitation](#post-exploitation-tools) | 10 |
+| 9 | [Forensics](#forensic-tools) | 8 |
 | 10 | [Payload Creation](#payload-creation-tools) | 8 |
 | 11 | [Exploit Framework](#exploit-framework) | 4 |
-| 12 | [Reverse Engineering](#reverse-engineering-tools) | 3 |
+| 12 | [Reverse Engineering](#reverse-engineering-tools) | 5 |
 | 13 | [DDOS Attack](#ddos-attack-tools) | 5 |
 | 14 | [RAT](#remote-administrator-tools-rat) | 1 |
 | 15 | [XSS Attack](#xss-attack-tools) | 9 |
 | 16 | [Steganography](#steganography-tools) | 4 |
-| 17 | [Other Tools](#other-tools) | 24 |
+| 17 | [Active Directory](#active-directory-tools) | 6 |
+| 18 | [Cloud Security](#cloud-security-tools) | 4 |
+| 19 | [Mobile Security](#mobile-security-tools) | 3 |
+| 20 | [Other Tools](#other-tools) | 24 |
 
 ---
 
@@ -91,6 +117,10 @@
 - [Holehe](https://github.com/megadose/holehe) ★
 - [Maigret](https://github.com/soxoj/maigret) ★
 - [httpx](https://github.com/projectdiscovery/httpx) ★
+- [SpiderFoot](https://github.com/smicallef/spiderfoot) ★
+- [Subfinder](https://github.com/projectdiscovery/subfinder) ★
+- [TruffleHog](https://github.com/trufflesecurity/trufflehog) ★
+- [Gitleaks](https://github.com/gitleaks/gitleaks) ★
 
 ## Wordlist Generator
 - [Cupp](https://github.com/Mebus/cupp)
@@ -114,6 +144,7 @@
 - [Airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon) ★
 - [hcxdumptool](https://github.com/ZerBea/hcxdumptool) ★
 - [hcxtools](https://github.com/ZerBea/hcxtools) ★
+- [Bettercap](https://github.com/bettercap/bettercap) ★
 
 ## SQL Injection Tools
 - [Sqlmap](https://github.com/sqlmapproject/sqlmap)
@@ -156,11 +187,25 @@
 - [Nikto](https://github.com/sullo/nikto) ★
 - [wafw00f](https://github.com/EnableSecurity/wafw00f) ★
 - [Katana](https://github.com/projectdiscovery/katana) ★
+- [Gobuster](https://github.com/OJ/gobuster) ★
+- [Dirsearch](https://github.com/maurosoria/dirsearch) ★
+- [OWASP ZAP](https://github.com/zaproxy/zaproxy) ★
+- [testssl.sh](https://github.com/drwetter/testssl.sh) ★
+- [Arjun](https://github.com/s0md3v/Arjun) ★
+- [Caido](https://github.com/caido/caido) ★
+- [mitmproxy](https://github.com/mitmproxy/mitmproxy) ★
 
 ## Post Exploitation Tools
 - [Vegile](https://github.com/Screetsec/Vegile)
 - [Chrome Keylogger](https://github.com/UndeadSec/HeraKeylogger)
 - [pwncat-cs](https://github.com/calebstewart/pwncat) ★
+- [Sliver](https://github.com/BishopFox/sliver) ★
+- [Havoc](https://github.com/HavocFramework/Havoc) ★
+- [PEASS-ng (LinPEAS/WinPEAS)](https://github.com/peass-ng/PEASS-ng) ★
+- [Ligolo-ng](https://github.com/nicocha30/ligolo-ng) ★
+- [Chisel](https://github.com/jpillora/chisel) ★
+- [Evil-WinRM](https://github.com/Hackplayers/evil-winrm) ★
+- [Mythic](https://github.com/its-a-feature/Mythic) ★
 
 ## Forensic Tools
 - Autopsy
@@ -170,6 +215,7 @@
 - [Toolsley](https://www.toolsley.com/)
 - [Volatility 3](https://github.com/volatilityfoundation/volatility3) ★
 - [Binwalk](https://github.com/ReFirmLabs/binwalk) ★
+- [pspy](https://github.com/DominicBreuker/pspy) ★
 
 ## Payload Creation Tools
 - [The FatRat](https://github.com/Screetsec/TheFatRat)
@@ -191,6 +237,8 @@
 - [Androguard](https://github.com/androguard/androguard)
 - [Apk2Gold](https://github.com/lxdvs/apk2gold)
 - [JadX](https://github.com/skylot/jadx)
+- [Ghidra](https://github.com/NationalSecurityAgency/ghidra) ★
+- [Radare2](https://github.com/radareorg/radare2) ★
 
 ## DDOS Attack Tools
 - [DDoS Script](https://github.com/the-deepnet/ddos)
@@ -217,6 +265,25 @@
 - SteganoHide
 - [StegoCracker](https://github.com/W1LDN16H7/StegoCracker)
 - [Whitespace](https://github.com/beardog108/snow10)
+
+## Active Directory Tools
+- [BloodHound](https://github.com/BloodHoundAD/BloodHound) ★
+- [NetExec (nxc)](https://github.com/Pennyw0rth/NetExec) ★
+- [Impacket](https://github.com/fortra/impacket) ★
+- [Responder](https://github.com/lgandx/Responder) ★
+- [Certipy](https://github.com/ly4k/Certipy) ★
+- [Kerbrute](https://github.com/ropnop/kerbrute) ★
+
+## Cloud Security Tools
+- [Prowler](https://github.com/prowler-cloud/prowler) ★
+- [ScoutSuite](https://github.com/nccgroup/ScoutSuite) ★
+- [Pacu](https://github.com/RhinoSecurityLabs/pacu) ★
+- [Trivy](https://github.com/aquasecurity/trivy) ★
+
+## Mobile Security Tools
+- [MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF) ★
+- [Frida](https://github.com/frida/frida) ★
+- [Objection](https://github.com/sensepost/objection) ★
 
 ## Other Tools
 
