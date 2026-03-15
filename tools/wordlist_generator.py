@@ -3,6 +3,7 @@ import subprocess
 
 from rich.panel import Panel
 from rich.prompt import Prompt
+from rich.table import Table
 from rich import box
 
 from core import HackingTool, HackingToolsCollection, console

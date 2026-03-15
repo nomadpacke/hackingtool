@@ -1,4 +1,5 @@
 import os
+import subprocess
 
 from core import HackingTool, HackingToolsCollection, console
 
