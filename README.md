@@ -35,7 +35,6 @@ This tool is intended for **educational and ethical purposes only**. The author 
 - Hash Cracking Tools
 - WiFi Deauthentication Tools
 - Bluetooth Hacking Tools
-- Steganography Tools
 - Web Crawling Tools
 - Multitor Tools
 
@@ -113,3 +112,8 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 - Original project by [Z4nzu](https://github.com/Z4nzu/hackingtool)
 - All tool authors and contributors
+
+## 🗒️ Personal Notes
+
+This is my personal fork for learning purposes. I primarily use this on Kali Linux inside a VM.
+Removed the duplicate "Steganography Tools" entry from the features list.
