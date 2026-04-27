@@ -118,6 +118,4 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 This is my personal fork for learning purposes. I primarily use this on Kali Linux inside a VM.
 Removed the duplicate "Steganography Tools" entry from the features list.
 
-> **Tip:** If you're running this inside a VM, make sure to run `sudo apt update && sudo apt upgrade` before installing to avoid dependency issues.
-
-> **Note:** I've found that some tools in the Wireless Attack and WiFi Deauthentication categories require a wireless adapter that supports monitor mode. I use an Alfa AWUS036ACH for this.
+> **Tip:** If you're running this on Kali Linux in a VM, make sure to run `sudo apt update` before installing to avoid dependency issues with some of the bundled tools.
