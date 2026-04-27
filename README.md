@@ -41,7 +41,7 @@ This tool is intended for **educational and ethical purposes only**. The author 
 ## 🖥️ Supported OS
 
 | OS | Support |
-|----|---------|
+|----|------|
 | Ubuntu/Debian | ✅ |
 | Kali Linux | ✅ |
 | Parrot OS | ✅ |
@@ -117,3 +117,5 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 This is my personal fork for learning purposes. I primarily use this on Kali Linux inside a VM.
 Removed the duplicate "Steganography Tools" entry from the features list.
+
+> **Tip:** If you get a `sudo: python3: command not found` error on Kali, try running `sudo apt install python3` or use `python3 -m hackingtool` instead.
