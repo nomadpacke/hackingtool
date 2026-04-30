@@ -118,4 +118,6 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 This is my personal fork for learning purposes. I primarily use this on Kali Linux inside a VM.
 Removed the duplicate "Steganography Tools" entry from the features list.
 
-> **Tip:** If you're running this in a Kali VM with limited resources, close any browser tabs before running heavy tools like DDOS or brute force modules — they can be surprisingly memory-hungry.
+> **Tip:** If you're running this inside a VM, make sure to run `sudo apt update && sudo apt upgrade` before installing to avoid dependency issues.
+
+> **Tip:** Some tools require additional system packages not listed in `requirements.txt`. If a tool fails to launch, check its individual GitHub page for system-level dependencies.
